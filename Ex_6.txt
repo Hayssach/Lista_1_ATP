@@ -1,0 +1,25 @@
+INÍCIO
+
+    DECLARE nota1, nota2, nota3, media COMO REAL
+
+    // Solicita as notas das avaliações
+    ESCREVA "Digite a nota da primeira avaliação: "
+    LEIA nota1
+
+    ESCREVA "Digite a nota da segunda avaliação: "
+    LEIA nota2
+
+    ESCREVA "Digite a nota da terceira avaliação: "
+    LEIA nota3
+
+    // Calcula a média
+    media <- (nota1 + nota2 + nota3) / 3
+
+    // Verifica se o aluno passou de ano
+    SE media >= 6.0 ENTÃO
+        ESCREVA "Aluno aprovado com média: ", media
+    SENÃO
+        ESCREVA "Aluno reprovado com média: ", media
+    FIM_SE
+
+FIM
