@@ -2,35 +2,34 @@
 #include <stdlib.h>
 
 int main() {
-    // DeclaraÁ„o das vari·veis
-    float a, b;
+    float b, c;
 
-    // Solicita ao usu·rio que insira os valores
-    printf("Digite o valor de a: ");
-    scanf("%f", &a);
-
+    
     printf("Digite o valor de b: ");
     scanf("%f", &b);
 
-    // Calcula as operaÁıes
-    float soma = a + b;
-    float subtracao = a - b;
-    float multiplicacao = a * b;
-    float divisao;
+    printf("Digite o valor de c: ");
+    scanf("%f", &c);
 
-    // Verifica se b È diferente de zero para evitar divis„o por zero
-    if (b != 0) {
-        divisao = a / b;
+    // Calcula as opera√ß√µes
+    float soma = b + c;
+    float subt = b - c;
+    float mult = b * c;
+    float div;
+
+    // Verifica se b √© diferente de zero para evitar divis√£o por zero
+    if (c != 0) {
+        div = b / c;
     } else {
-        printf("Erro: Divis„o por zero n„o È permitida.\n");
-        return 1; // Retorna um cÛdigo de erro
+        printf("Erro: Divis√£o por zero n√£o √© permitida.\n");
+        return 1; 
     }
 
     // Exibe os resultados
     printf("Soma: %.2f\n", soma);
-    printf("SubtraÁ„o: %.2f\n", subtracao);
-    printf("MultiplicaÁ„o: %.2f\n", multiplicacao);
-    printf("Divis„o: %.2f\n", divisao);
+    printf("Subtra√ß√£o: %.2f\n", subt);
+    printf("Multiplica√ß√£o: %.2f\n", mult);
+    printf("Divis√£o: %.2f\n", div);
 
     getchar(); 
     return 0;
