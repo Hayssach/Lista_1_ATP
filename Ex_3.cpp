@@ -2,21 +2,21 @@
 #include <stdlib.h>
 
 int main() {
-    // Declaração das variáveis
-    float n1, n2, soma;
+    // DeclaraÃ§Ã£o das variÃ¡veis
+    float num1, num2, s;
 
-    // Solicita ao usuário que insira os dois números
-    printf("Digite o primeiro número (use '.' para separar as casas decimais): ");
-    scanf("%f", &n1);
+    // Solicita ao usuÃ¡rio que insira os dois nÃºmeros
+    printf("Digite o primeiro nÃºmero (use '.' para separar as casas decimais): ");
+    scanf("%f", &num1);
 
-    printf("Digite o segundo número (use '.' para separar as casas decimais): ");
-    scanf("%f", &n2);
+    printf("Digite o segundo nÃºmero (use '.' para separar as casas decimais): ");
+    scanf("%f", &num2);
 
     // Calcula a soma
-    soma = n1 + n2;
+    s = num1 + num2;
 
     // Exibe o resultado
-    printf("A soma de %.2f e %.2f é: %.2f\n", n1, n2, soma);
+    printf("A soma de %.2f e %.2f Ã©: %.2f\n", num1, num2, s);
     
     getchar();
     return 0;
