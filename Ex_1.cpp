@@ -2,19 +2,19 @@
 #include <stdlib.h>
 
 int main() {
-    int num1, num2, soma;
+    int numero1, numero2, s;
 
     // Solicita ao usuário que insira os dois números
     printf("Digite o primeiro número inteiro: ");
-    scanf("%d", &num1);
+    scanf("%d", &numero1);
 
     printf("Digite o segundo número inteiro: ");
-    scanf("%d", &num2);
+    scanf("%d", &numero2);
 
     // Calcula a soma
-    soma = num1 + num2;
+    s = numero1 + numero2;
 
-    printf("A soma de %d e %d é: %d\n", num1, num2, soma);
+    printf("A soma de %d e %d é: %d\n", numero1, numero2, s);
 
     getchar();
     return 0;
