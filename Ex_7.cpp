@@ -2,25 +2,25 @@
 #include <stdlib.h>
 const double PI = 3.14159265358979323846;
 
-double calcularAreaCirculo(double raio) {
-    // Calcula a área usando a fórmula A = p * r^2
-    double area = PI;
+double calculaAreaCirculo(double r) {
+    // Calcula a Ã¡rea usando a fÃ³rmula A = p * r^2
+    double a = PI;
     // Multiplica o raio por ele mesmo para obter r^2
-    area *= raio * raio;
-    return area;
+    a *= r * r;
+    return a;
 }
 
 int main() {
-    double raio;
+    double r;
 
-    printf("Digite o raio do círculo: ");
-    scanf("%lf", &raio);
+    printf("Digite o raio do cÃ­rculo: ");
+    scanf("%lf", &r);
 
-    if (raio < 0) {
-        printf("O raio não pode ser negativo.\n");
+    if (r < 0) {
+        printf("O raio nÃ£o pode ser negativo.\n");
     } else {
-        double area = calcularAreaCirculo(raio);
-        printf("A área do círculo com raio %.2lf é: %.2lf\n", raio, area);
+        double a = calcularAreaCirculo(r);
+        printf("A Ã¡rea do cÃ­rculo com raio %.2lf Ã©: %.2lf\n", r, a);
     }
     getchar();
     return 0;
